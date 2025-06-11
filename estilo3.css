@@ -1,0 +1,334 @@
+/* ======= RESET GERAL - Aplica-se a todo o site ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======= HEADER - Cabeçalho da página ======= */
+header {
+  background: #4b5e3c;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.top-bar h1 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 14px;
+  color: #d6e3cd;
+}
+
+/* ======= NAVEGAÇÃO - Menu de links ======= */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  background: #3e4f33;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s ease;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  background: #5e724e;
+  border-radius: 5px;
+}
+
+/* ======= HERO - Imagem e texto de destaque inicial ======= */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #e7efe2;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+.hero-texto {
+  max-width: 500px;
+  margin: 20px;
+}
+
+.hero-texto h2 {
+  font-size: 2em;
+  color: #4b5e3c;
+  margin-bottom: 10px;
+}
+
+.hero-texto p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* ======= MAIN - Conteúdo principal ======= */
+main {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #343c2d;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #4b5e3c;
+  margin-bottom: 20px;
+}
+
+main > p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+/* ======= PLANOS - Cartões com valores/benefícios ======= */
+.planos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plano {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.plano:hover {
+  transform: scale(1.05);
+  border-color: #4b5e3c;
+}
+
+.plano h2 {
+  margin-top: 0;
+  color: #4b5e3c;
+}
+
+.preco {
+  font-size: 24px;
+  color: #4b5e3c;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #444;
+  text-align: left;
+}
+
+.beneficios li::before {
+  content: "✔ ";
+  color: #4b5e3c;
+}
+
+.botao-compra {
+  display: inline-block;
+  background-color: #4b5e3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.botao-compra:hover {
+  background-color: #5e724e;
+}
+
+/* ======= GALERIA - Modelos e imagens ======= */
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.modelo {
+  text-align: center;
+  max-width: 400px;
+}
+
+.modelo img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 6 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+  display: block;
+}
+
+/* ======= FORMULÁRIO DE CONTATO ======= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+
+button {
+  padding: 12px;
+  background-color: #4b5e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5e724e;
+}
+
+/* ======= TABELA - Exibição de dados ======= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4b5e3c;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ======= FOOTER - Rodapé ======= */
+footer {
+  background: #4b5e3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* ======= RESPONSIVIDADE PARA TELA PEQUENA ======= */
+@media (max-width: 768px) {
+  .planos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+#texto-p {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-container img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.imagem-full {
+  width: 100%;
+  display: block;
+}
